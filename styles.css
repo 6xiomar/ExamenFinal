@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#inicio {
+    background-color: #f9f9f9;
+}
+
+#mapas {
+    background-color: #e6e6e6;
+}
+
+#informacion {
+    background-color: #dcdcdc;
+}
