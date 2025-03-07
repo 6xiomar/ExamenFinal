@@ -27,3 +27,12 @@ section {
 #informacion {
     background-color: #dcdcdc;
 }
+
+
+
+.imagen-barrio {
+    width: 100%;  /* La imagen ocupará todo el ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Evita espacios en línea */
+    
+}
