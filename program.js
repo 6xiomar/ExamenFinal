@@ -23,7 +23,7 @@
             .then(response => response.json())
             .then(data => {
                 var poligonoLayer = L.geoJSON(data, {
-                    style: { color: "red", weight: 2, opacity: 0.7 }
+                    style: { color: "purple", weight: 2, opacity: 0.7 }
                 });
                 poligonoLayer.addTo(mapaIzquierda);
                 poligonoLayer.addTo(mapaDerecha);
@@ -47,7 +47,7 @@
 
     document.addEventListener("DOMContentLoaded", function () {
         // Inicializar el mapa
-        var mapa = L.map("mapa").setView([4.555527120211004, -74.06541235312463], 13); // Reemplaza con las coordenadas de tu barrio
+        var mapa = L.map("mapa").setView([4.548900134233985, -74.06660742480192], 13); // Reemplaza con las coordenadas de tu barrio
     
         // Cargar capa base de OpenStreetMap
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -55,12 +55,12 @@
         }).addTo(mapa);
     
         // Cargar el polígono desde un archivo GeoJSON
-        fetch("poligono.geojson") // Asegúrate de tener este archivo en la misma carpeta
+        fetch("localidadGranColombia.geojson") // Asegúrate de tener este archivo en la misma carpeta
             .then(response => response.json())
             .then(data => {
                 L.geoJSON(data, {
                     style: {
-                        color: "red",
+                        color: "green",
                         weight: 2,
                         opacity: 0.7
                     }
