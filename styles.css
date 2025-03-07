@@ -99,3 +99,33 @@ section {
 .botones button:hover {
     background-color: #0056b3;
 }
+
+
+
+
+
+
+/* estilos para información del polígono. */
+
+#info-poligono {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#info-poligono ul {
+    list-style: none;
+    padding: 0;
+}
+
+#info-poligono li {
+    margin-bottom: 10px;
+}
+
+pre {
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}

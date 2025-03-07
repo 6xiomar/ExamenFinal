@@ -82,3 +82,30 @@
         });
     });
     
+
+
+    // información del polígonoss
+
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("barrioGranColombia.geojson")
+            .then(response => response.json())
+            .then(data => {
+                // Calcular Área
+                var area = turf.area(data);
+                document.getElementById("area").textContent = area.toFixed(2);
+    
+                // Calcular Perímetro
+                var perimetro = turf.length(data, { units: "meters" });
+                document.getElementById("perimetro").textContent = perimetro.toFixed(2);
+    
+                // Calcular Centroide
+                var centroide = turf.centroid(data);
+                document.getElementById("centroide").textContent = `[${centroide.geometry.coordinates[1]}, ${centroide.geometry.coordinates[0]}]`;
+    
+                // Mostrar Vértices
+                var vertices = data.features[0].geometry.coordinates[0];
+                document.getElementById("vertices").textContent = JSON.stringify(vertices, null, 2);
+            })
+            .catch(error => console.error("Error al cargar el GeoJSON:", error));
+    });
+    
