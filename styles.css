@@ -29,10 +29,38 @@ section {
 }
 
 
+/* Estilos seccion de la imagen del barrio */
 
 .imagen-barrio {
     width: 100%;  /* La imagen ocupará todo el ancho de la pantalla */
     height: auto; /* Mantiene la proporción de la imagen */
     display: block; /* Evita espacios en línea */
     
+}
+
+
+/* Estilos seccion del mapa */
+
+#mapa {
+    width: 100%;
+    height: 500px; /* Ajusta el tamaño del mapa */
+}
+
+.botones {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.botones button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.botones button:hover {
+    background-color: #0056b3;
 }
