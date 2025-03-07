@@ -6,6 +6,7 @@
     <title>Mi Página</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://rawgit.com/jieter/Leaflet.Sync/master/L.Map.Sync.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,9 +22,12 @@
 
     <section id="mapas">
         <h2>Mapas</h2>
-        <div id="mapa">
+        <div id="mapa-container">
+            <div id="mapa-izquierda"></div>
+            <div id="mapa-derecha"></div>
+            <input type="range" id="slider" min="0" max="100" value="50" orient="vertical">
         </div>
-    </section>
+    </section>    
 
     <section id="informacion">
         <h2>Información</h2>

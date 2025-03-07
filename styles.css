@@ -39,17 +39,54 @@ section {
 }
 
 
-/* Estilos seccion del mapa */
 
-#mapa {
+/* Estilosmapas segunda sección */
+#mapa-container {
+    position: relative;
     width: 100%;
-    height: 500px; /* Ajusta el tamaño del mapa */
+    height: 500px;
+    overflow: hidden;
 }
+
+#mapa-izquierda, #mapa-derecha {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#mapa-derecha {
+    width: 50%; /* Inicialmente, se muestra la mitad del mapa satelital */
+}
+
+#slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Posicionado en el centro */
+    transform: translateX(-50%);
+    width: 5px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: ew-resize; /* Cursor de arrastre horizontal */
+    z-index: 1000;
+}
+
+
+
+
+
+
 
 .botones {
     text-align: center;
     margin-top: 10px;
 }
+
+
+
+
 
 .botones button {
     padding: 10px;
@@ -60,6 +97,9 @@ section {
     color: white;
     border-radius: 5px;
 }
+
+
+
 
 .botones button:hover {
     background-color: #0056b3;
