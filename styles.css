@@ -74,19 +74,17 @@ section {
 }
 
 
+/* Estilos mapa tercera sección y botones*/
 
-
-
-
+#mapa {
+    width: 100%;
+    height: 500px; /* Ajusta el tamaño del mapa */
+}
 
 .botones {
     text-align: center;
     margin-top: 10px;
 }
-
-
-
-
 
 .botones button {
     padding: 10px;
@@ -97,9 +95,6 @@ section {
     color: white;
     border-radius: 5px;
 }
-
-
-
 
 .botones button:hover {
     background-color: #0056b3;
